@@ -1,5 +1,3 @@
-# Social graphs project
+# Social Graphs Project
 
-This is the repo for the class 02805 Social Graphs and Interactions at DTU.
-
-Authors: Julie Maria Petersen & Lise Styve
+This is the repo for the class 02805 Social Graphs and Interactions at DTU in the fall 2020
