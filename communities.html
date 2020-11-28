@@ -53,16 +53,38 @@
 }
   
 </style>
+
+<script> var slideIndex = 1;
+  showDivs(slideIndex);
+  
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+  
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    x[slideIndex-1].style.display = "block";
+  }
+  </script>
+  
 </head>
+
+
 
 <body style="background-color:lightgrey;">
 
 <div class="topnav">
   <a class="active" href="/">Github Network</a>
-  <a href="/overview">Overview</a>
-  <a href="/graph">Graph</a>
+  <a href="/overview">Network statistics</a>
+  <a href="/graph">Graph and locations</a>
   <a href="/communities">Communities</a>
-  <a href="/explore">Explore</a>
+  <a href="/time">Time and trends</a>
 </div>
 
   <center>
@@ -71,8 +93,31 @@
     On this page you can ..
 </div>	
 
-	
 </center>
+
+<div class="w3-content w3-display-container">
+
+  <iframe class="mySlides" src="viz/year0.html" height="630" width="600"></iframe>
+  <iframe class="mySlides" src="viz/year1.html" height="630" width="600"></iframe>
+  <iframe class="mySlides" src="viz/year2.html" height="630" width="600"></iframe>
+  <iframe class="mySlides" src="viz/year3.html" height="630" width="600"></iframe>
+  <iframe class="mySlides" src="viz/year4.html" height="630" width="600"></iframe>
+  <iframe class="mySlides" src="viz/year5.html" height="630" width="600"></iframe>
+  <iframe class="mySlides" src="viz/year6.html" height="630" width="600"></iframe>
+  <iframe class="mySlides" src="viz/year7.html" height="630" width="600"></iframe>
+  <iframe class="mySlides" src="viz/year8.html" height="630" width="600"></iframe>
+  <iframe class="mySlides" src="viz/year9.html" height="630" width="600"></iframe>
+  <iframe class="mySlides" src="viz/year10.html" height="630" width="600"></iframe>
+  <iframe class="mySlides" src="viz/year11.html" height="630" width="600"></iframe>
+  <iframe class="mySlides" src="viz/year12.html" height="630" width="600"></iframe>
+  <div class="w3-center w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border" onclick="currentDiv(3)"></span>
+  </div>
+</div>
 
 	<p></p>
 <center>	
