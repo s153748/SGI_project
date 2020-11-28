@@ -51,6 +51,21 @@
   padding-left: 0px;
   text-align: left;
 	  
+	  /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+	  
 }
 </style>
 </head>
@@ -74,14 +89,20 @@
 </div>	
 
 <div class="centered-container">
-  <iframe src="visualizations/gcc.html" height="630" width="600"></iframe>
+<div class="row">
+  <div class="column">
+    <iframe src="visualizations/gcc.html" height="400" width="600"></iframe>
+  </div>
+  <div class="column">
+    <iframe src="visualizations/map.html" height="400" width="600"></iframe>
+  </div>
 </div>
+
+  
+
 	  
 <p> <br> </p>
 	  
- <div class="centered-container">
-  <iframe src="visualizations/map.html" height="630" width="600"></iframe>
-</div>
 	  
 
 	
