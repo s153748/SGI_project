@@ -48,9 +48,40 @@
   }
 	
   .textbox {
-  width: 1200px;
+  width: 1000px;
   padding-left: 0px;
-  text-align: left;	  
+  text-align: center;	  
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  margin-left:-5px;
+  margin-right:-5px;
+}
+
+.column {
+  flex: 50%;
+  padding: 5px;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
   
 </style>
@@ -58,34 +89,85 @@
 
 <body style="background-color:lightgrey;">
 
-<div class="topnav">
-  <a class="active" href="/">Github Network</a>
-  <a href="/overview">Overview</a>
-  <a href="/graph">Graph and locations</a>
-  <a href="/communities">Communities</a>
-  <a href="/time">Time and trends</a>
+  <div class="topnav">
+    <a class="active" href="/">Github Network</a>
+    <a href="/overview">Basic statistics</a>
+    <a href="/graph">Network</a>
+    <a href="/geographics">Geographics</a>
+    <a href="/communities">Communities</a>
+  </div>
+
+
+<div class = "textbox" > 
+ <h2 style="color:#002d72;"> Preliminary Analysis</h2>
+This page seeks to give an overview of the github data. 
+</div>	
+
+<div class="centered-container">
+  <iframe src="file.html" height="630" width="500"></iframe>
+  <iframe src="file.html" height="630" width="500"></iframe>
 </div>
 
-<center>
 <div class = "textbox" > 
- <h2 style="color:#002d72;"> Statistics for Github Network </h2>
-To give you an introduction to ...
-</div>	
-</center>
-	
-<div class="centered-container">
-  <iframe src="file.html" height="630" width="1200"></iframe>
+ This page seeks to give an overview of the github data. 
+ </div>	
+
+ <div class="centered-container">
+  <iframe src="file.html" height="630" width="500"></iframe>
+  <iframe src="file.html" height="630" width="500"></iframe>
 </div>
+
+ 
+ <div class = "textbox" > 
+  <h2 style="color:#006372;"> Statistics</h2>
+
+  <div class="row">
+    <div class="column">
+      <table>
+        <caption> Users with most stars </caption>
+        <tr>
+          <th>Username</th>
+          <th>Total stars</th>
+        </tr>
+        <tr>
+          <td>Alfreds Futterkiste</td>
+          <td>Maria Anders</td>
+        </tr>
+        <tr>
+          <td>Centro comercial Moctezuma</td>
+          <td>Francisco Chang</td>
+        </tr>
+        <tr>
+          <td>Ernst Handel</td>
+          <td>Roland Mendel</td>
+        </tr> 
+      </table>
+      </div>
+      <div class="column">
+        <table>
+          <caption> Users with most...</caption>
+          <tr>
+            <th>Username</th>
+            <th>Total stars</th>
+          </tr>
+          <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+          </tr>
+          <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+          </tr>
+          <tr>
+            <td>Ernst Handel</td>
+            <td>Roland Mendel</td>
+          </tr> 
+        </table>
+      </div>
+ </div>	
+
 
 	<p></p>	
-
-<center>
-<div class="centered-container">
-    <img src="gccdegree.png" alt="network" style="width:100%;max-width:800px">
-</div>
-	
-</center>
-
 
 </body>
 </html>

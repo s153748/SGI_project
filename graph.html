@@ -47,26 +47,13 @@
   }
 	
   .textbox {
-  width: 1200px;
+  width: 1000px;
   padding-left: 0px;
-	  text-align: left}
-	  
-	  /* Three image containers (use 25% for four, and 50% for two, etc) */
-.column {
-  float: left;
-  width: 50%;
-  padding: 5px;
+  text-align: center;	  
 }
-
-/* Clear floats after image containers */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-	 
+ 
 </style>
+
 </head>
 
 <body style="background-color:lightgrey;">
@@ -74,12 +61,12 @@
 <div class="topnav">
   <a class="active" href="/">Github Network</a>
   <a href="/overview">Basic statistics</a>
-  <a href="/graph">Graph and locations</a>
+  <a href="/graph">Network</a>
+  <a href="/timespace">Time and space</a>
   <a href="/communities">Communities</a>
-  <a href="/time">Time and trends</a>
 </div>
 
-  <center>
+<center>
 <div class = "textbox" > 
  <h2 style="color:#002d72;"> Network graph </h2>
     On this page the you see the visualization of the network, both in the more pure form
@@ -87,21 +74,76 @@
    where the node positions correspond to the geographical position of the user. 
 </div>	
 
+
+<center>
+  <div class = "box" > 
+  <center>
+    <h2 style="color:#002d72;">Full network graph</h2> 
+  </center> 
+  </div>
+  </center>
+
+  <div class = "textbox" > 
+      This is the giant connected component anno 2020. 
+  </div>	
+
 <div class="centered-container">
 <div>
-    <iframe src="visualizations/gcc.html"  style="width:100%;max-width:800px"></iframe>
-  </div>
-  <div>
-    <iframe src="visualizations/map.html" style="width:100%;max-width:800px"></iframe>
+    <iframe src="visualizations/gcc.html"  height="500" width="800"></iframe>
   </div>
 </div>
 
-	  
-<p> <br> </p>
-	  
-	  
+<div class = "textbox" > 
+  For some basic stats about the network we have found.... 
+</div>
 
-	
+<div class="centered-container">
+  <div>
+      <iframe src="visualizations/degreedist.html"  height="500" width="800"></iframe>
+    </div>
+</div>
+
+<div class = "textbox" > 
+  The most central users by in-degree and out-degree are also found. As well as the most influential
+  users based on the eigenvector centrality.
+</div>
+
+
+
+
+
+
+
+
+
 </center>	
+
+<p> <br> </p>
+
+
+<p> </p>
+
+<center>
+<div class = "box" > 
+<center>
+  <h2 style="color:#002d72;">Development</h2> 
+</center> 
+</div>
+</center>
+
+<div class = "textbox" > 
+  <h2 style="color:#002d72;"> Network graph </h2>
+    Here you see the development over time. 
+ </div>	
+
+<div class="centered-container">
+  <div>
+      <img src="visualizations/development.gif"  height="630" width="1200">
+  </div>
+</div>
+
+
+
+
 </body>
 </html>
