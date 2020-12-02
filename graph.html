@@ -50,23 +50,9 @@
   width: 1200px;
   padding-left: 0px;
 	  text-align: left}
-	  
-	  /* Three image containers (use 25% for four, and 50% for two, etc) */
-.column {
-  float: left;
-  width: 50%;
-  padding: 5px;
-}
-
-/* Clear floats after image containers */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-	 
+ 
 </style>
+
 </head>
 
 <body style="background-color:lightgrey;">
@@ -74,12 +60,12 @@
 <div class="topnav">
   <a class="active" href="/">Github Network</a>
   <a href="/overview">Basic statistics</a>
-  <a href="/graph">Graph and locations</a>
+  <a href="/graph">Graph and development</a>
+  <a href="/continents">Continents</a>
   <a href="/communities">Communities</a>
-  <a href="/time">Time and trends</a>
 </div>
 
-  <center>
+<center>
 <div class = "textbox" > 
  <h2 style="color:#002d72;"> Network graph </h2>
     On this page the you see the visualization of the network, both in the more pure form
@@ -87,21 +73,98 @@
    where the node positions correspond to the geographical position of the user. 
 </div>	
 
+
+<center>
+  <div class = "box" > 
+  <center>
+    <h2 style="color:#002d72;">Full network graph</h2> 
+  </center> 
+  </div>
+  </center>
+
+  <div class = "textbox" > 
+      This is the giant connected component anno 2020. 
+  </div>	
+
 <div class="centered-container">
 <div>
-    <iframe src="visualizations/gcc.html"  style="width:100%;max-width:800px"></iframe>
-  </div>
-  <div>
-    <iframe src="visualizations/map.html" style="width:100%;max-width:800px"></iframe>
+    <iframe src="visualizations/gcc.html"  height="630" width="1200"></iframe>
   </div>
 </div>
 
-	  
+<div class = "textbox" > 
+  For some basic stats about the network we have found.... 
+</div>
+
+
+
+
+</center>	
+
 <p> <br> </p>
-	  
+
+
+<p> </p>
+
+<center>
+<div class = "box" > 
+<center>
+  <h2 style="color:#002d72;">Development</h2> 
+</center> 
+</div>
+</center>
+
+<div class = "textbox" > 
+  <h2 style="color:#002d72;"> Network graph </h2>
+    Here you see the development over time. 
+ </div>	
+
+<div class="w3-content" style="max-width:800px">
+  <img class="mySlides" src="year111.png" height="630" width="1200">
+  <img class="mySlides" src="year111.png" height="630" width="1200">
+  <img class="mySlides" src="year111.png" height="630" width="1200">
+</div>
+
+<div class="w3-center">
+  <div class="w3-section">
+    <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
+    <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
+  </div>
+  <button class="w3-button demo" onclick="currentDiv(1)">1</button> 
+  <button class="w3-button demo" onclick="currentDiv(2)">2</button> 
+  <button class="w3-button demo" onclick="currentDiv(3)">3</button> 
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-red";
+}
+</script>
 	  
 
-	
-</center>	
+
 </body>
 </html>
