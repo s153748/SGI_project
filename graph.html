@@ -47,9 +47,10 @@
   }
 	
   .textbox {
-  width: 1200px;
+  width: 1000px;
   padding-left: 0px;
-	  text-align: left}
+  text-align: center;	  
+}
  
 </style>
 
@@ -60,8 +61,8 @@
 <div class="topnav">
   <a class="active" href="/">Github Network</a>
   <a href="/overview">Basic statistics</a>
-  <a href="/graph">Graph and development</a>
-  <a href="/continents">Continents</a>
+  <a href="/graph">Network</a>
+  <a href="/timespace">Time and space</a>
   <a href="/communities">Communities</a>
 </div>
 
@@ -88,13 +89,29 @@
 
 <div class="centered-container">
 <div>
-    <iframe src="visualizations/gcc.html"  height="630" width="1200"></iframe>
+    <iframe src="visualizations/gcc.html"  height="500" width="800"></iframe>
   </div>
 </div>
 
 <div class = "textbox" > 
   For some basic stats about the network we have found.... 
 </div>
+
+<div class="centered-container">
+  <div>
+      <iframe src="visualizations/degreedist.html"  height="500" width="800"></iframe>
+    </div>
+</div>
+
+<div class = "textbox" > 
+  The most central users by in-degree and out-degree are also found. As well as the most influential
+  users based on the eigenvector centrality.
+</div>
+
+
+
+
+
 
 
 
@@ -119,11 +136,11 @@
     Here you see the development over time. 
  </div>	
 
- <div class="centered-container">
+<div class="centered-container">
   <div>
-      <iimg src="visualizations/development.gif"  height="630" width="1200">
-    </div>
+      <img src="visualizations/development.gif"  height="630" width="1200">
   </div>
+</div>
 
 
 
