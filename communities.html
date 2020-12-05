@@ -50,7 +50,7 @@
   .textbox {
   width: 1000px;
   padding-left: 0px;
-  text-align: center;	  
+  text-align: left;	  
 }
 
 /* Style the tab */
@@ -90,6 +90,23 @@
   border-top: none;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 </style>
 </head>
 
@@ -103,60 +120,60 @@
   </div>
 
 
-<center>
-<div class = "textbox" > 
- <h2 style="color:#006372;"> Check out communities  </h2>
-    On this page you can check out the communities...
-</div>	
 
-</center>
+  <!-- First section -->
+  <center> <h2 style="color:#006372;">Community Analysis</h2></center>
 
+  <div class = "textbox" > 
+    On this page you can check out the communities... 
+    Click on the tabs to look closer into the different communities
+  </div>
 
-<center>
-
-<p>Click on the tabs to look closer into the different communities</p>
-<div class="centered-container">
-<div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'Com1')">Community 1</button>
-  <button class="tablinks" onclick="openCity(event, 'Com2')">Community 2</button>
-  <button class="tablinks" onclick="openCity(event, 'Com3')">Community 3</button>
-  <button class="tablinks" onclick="openCity(event, 'Com4')">Community 4</button>
-  <button class="tablinks" onclick="openCity(event, 'Com5')">Community 5</button>
-</div>
-</div>
-
-</center>
+  <!-- Tabs -->
+  <div class="centered-container">
+  <div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'Com1')">Community 1</button>
+    <button class="tablinks" onclick="openCity(event, 'Com2')">Community 2</button>
+    <button class="tablinks" onclick="openCity(event, 'Com3')">Community 3</button>
+    <button class="tablinks" onclick="openCity(event, 'Com4')">Community 4</button>
+    <button class="tablinks" onclick="openCity(event, 'Com5')">Community 5</button>
+  </div>
+  </div>
 
 
 <div id="Com1" class="tabcontent">
-  <center>
-    <div class = "box" > 
-    <center>
-      <h2 style="color:#006372;">Community 1 </h2> 
-      <p> For community 1 we see that....</p>
-    </center> 
-    </div>
-    </center>
-   
-  <div class="centered-container">
-    <iframe src="visualizations/file0.html" height="500" width="1000"></iframe>
+
+  <center> <h3 style="color:#536872;">Community 1 </h3> </center> 
+
+  <div class = "textbox" > 
+    For community 1 we see that....
   </div>
 
-  <center>
-    <div class = "box" > 
-    <center>
-      <h2 style="color:#006372;">Wordclouds </h2> 
-      <p>Then for the text analysis, we have the wordclouds showing the most used words
-        in the communities both in descriptions and bios. </p>
-    </center> 
-    </div>
-    </center>
- 
-
   <div class="centered-container">
-    <img src="visualizations/Programming languages_word0.png" height="500" width="1000"></iframe>
+    <iframe src="visualizations/file0.html" height="455" width="1000"></iframe>
   </div>
- 
+
+  <center> <h3 style="color:#536872;">Wordclouds </h3> </center> 
+
+  <div class = "textbox" > 
+    Then for the text analysis, we have the wordclouds showing the most used words
+        in the communities both in descriptions and bios
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <center><p style="color:#536872;">Repository descriptions </p>  </center>
+      <img src="visualizations/Repository descriptions_word0.png" alt="Snow" style="width:100%"> 
+    </div>
+    <div class="column">
+      <center><p style="color:#536872;">User biographies </p>   </center>
+      <img src="visualizations/User biographies_word0.png" alt="Forest" style="width:100%">
+    </div>
+    <div class="column">
+      \<center><p style="color:#536872;">Programming languages</p>  </center>
+      <img src="visualizations/Programming languages_word0.png" alt="Mountains" style="width:100%">
+    </div>
+  </div>
 </div>
 
 <div id="Com2" class="tabcontent">
