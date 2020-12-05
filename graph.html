@@ -58,44 +58,33 @@
 
 <body style="background-color:lightgrey;">
 
-<div class="topnav">
-  <a class="active" href="/">Github Network</a>
-  <a href="/overview">Basic statistics</a>
-  <a href="/graph">Network</a>
-  <a href="/timespace">Time and space</a>
-  <a href="/communities">Communities</a>
-</div>
+  <div class="topnav">
+    <a class="active" href="/">Github Network</a>
+    <a href="/overview">Basic statistics</a>
+    <a href="/graph">Network</a>
+    <a href="/geographics">Geographics</a>
+    <a href="/communities">Communities</a>
+  </div>
 
 
 <center>
-  <div class = "box" > 
-  <center>
-    <h2 style="color:#006372;">Full network graph</h2> 
-    <p>On this page the you see the visualization of the network, both in the more pure form
-      with node positions found using the force 2 atlas algorithm</p>
-  </center> 
-  </div>
-  </center>
+  <h2 style="color:#006372;">Full network graph</h2> 
 
   <div class = "textbox" > 
+    On this page the you see the visualization of the network, both in the more pure form
+      with node positions found using the force 2 atlas algorithm
       This is the giant connected component anno 2020. 
   </div>	
 
-<div class="centered-container">
-<div>
-    <iframe src="visualizations/gcc.html"  height="500" width="800"></iframe>
+  <iframe src="visualizations/gcc.html"  height="500" width="1000"></iframe>
+
+
+  <div class = "textbox" > 
+    For some basic stats about the network we have found.... 
   </div>
-</div>
 
-<div class = "textbox" > 
-  For some basic stats about the network we have found.... 
-</div>
-
-<div class="centered-container">
-  <div>
-      <iframe src="visualizations/degreedist.html"  height="500" width="800"></iframe>
-    </div>
-</div>
+  <iframe src="visualizations/degreedist.html"  height="500" width="1000"></iframe>
+    
 
 <div class = "textbox" > 
   The most central users by in-degree and out-degree are also found. As well as the most influential
