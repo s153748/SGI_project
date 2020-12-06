@@ -3,7 +3,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <style> 
-  body {
+   body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 2.6; 
@@ -36,21 +36,33 @@
   
   .centered-container {
     height: 100%;
+    width: 1200px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-    .box {
-  background-color: #d3d3d3;
-  width: 100%;
-  padding: 1px;	  
-  }
-	
+ 
   .textbox {
-  width: 1000px;
+  width: 1200px;
   padding-left: 0px;
   text-align: left;	  
 }
+
+ .box {
+  background-color: lightgrey;
+  width: 1010px;
+  padding: 1px;	  
+  }
+
+  .box {
+      width: 1200px;	  
+    }
+  
+   .titlebox {
+  background-color: lightgrey;
+  width: 1200px;
+  padding: 1px;	  
+  }
 
 .row {
     display: flex;
@@ -79,20 +91,28 @@
   </div>
 
 
-  <h2 style="color:#006372;">Explore the network of users</h2>
+  <center>
+    <div class = "textbox" > 
+      <h2 style="color:#006372;">Explore the network of users</h2>
+  
+      On this page, you can explore the network of GitHub users both visually and ind terms of
+      an analysis. This is done for the giant connected component of the network consisting
+      of 737 of th 1585 users. Further, we look into the texts from the user profiles and repository descriptions 
+      combined with a sentiment analysis of the individual users.    
+    </div>	
+    </center>
 
-  <div class = "textbox" > 
-
-    On this page, you can explore the network of GitHub users both visually and ind terms of
-    an analysis. This is done for the giant connected component of the network consisting
-    of 737 of th 1585 users. Further, we look into the texts from the user profiles and repository descriptions 
-    combined with a sentiment analysis of the individual users. 
+    <p></p>
+	
+    <center>
+    <div class = "titlebox" > 
+      <center>  
+      <h2 style="color:#006372;">Graph visualization</h2>
+      </center> 
+    </div>
+    </center>
     
-  
-  </div>	
 
-  
-<center><h2 style="color:#006372;">Graph visualization</h2></center>
 
 <center>
   <div class = "textbox" > 
@@ -107,7 +127,15 @@
 
 </center>
 
-<center><h2 style="color:#006372;">Network Analysis</h2></center>
+
+<center>
+  <div class = "titlebox" > 
+    <center>  
+      <h2 style="color:#006372;">Network Analysis</h2>
+    </center> 
+  </div>
+  </center>
+
 
 <center>
  <h3>Degree distribution</h3>
@@ -162,8 +190,14 @@
     and betweenness centrality.
   </div>
 </center>
- 
-<center><h2 style="color:#006372;">Text Analysis</h2></center>
+
+<center>
+  <div class = "titlebox" > 
+    <center>  
+      <h2 style="color:#006372;">Text Analysis</h2>
+    </center> 
+  </div>
+  </center>
 
 <center>
 

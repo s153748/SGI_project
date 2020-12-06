@@ -3,7 +3,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <style> 
-  body {
+ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 2.6; 
@@ -36,22 +36,35 @@
   
   .centered-container {
     height: 100%;
-    width: 1000px;
+    width: 1200px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-    .box {
-  background-color: lightgrey;
-  width: 100%;
-  padding: 1px;	  
-  }
-	
+ 
   .textbox {
-  width: 1000px;
+  width: 1200px;
   padding-left: 0px;
   text-align: left;	  
 }
+
+ .box {
+  background-color: lightgrey;
+  width: 1010px;
+  padding: 1px;	  
+  }
+
+  .box {
+      width: 1200px;	  
+    }
+  
+   .titlebox {
+  background-color: lightgrey;
+  width: 1200px;
+  padding: 1px;	  
+  }
+	
+
   
 </style>
 </head>
@@ -69,16 +82,23 @@
 
   <!-- First section -->
 
-  <h2 style="color:#006372;">Explore geographics of users</h2>
-  
-  <div class = "textbox" > 
-    On this page, we take a closer look at the geographical location of the users and 
+  <center>
+    <div class = "textbox" > 
+      <h2 style="color:#006372;">Explore geographics of users</h2>
+      On this page, we take a closer look at the geographical location of the users and 
     trends regarding the different continents. Here we exclusively look at the users that 
-    actually have a location attached to them, that is only 949 out of the total 1585. 
-  </div>
-  
-    
-    <center><h2 style="color:#006372;">World Map Network</h2></center>
+    actually have a location attached to them, that is only 949 out of the total 1585.
+    </div>	
+    </center>
+
+  <center>
+    <div class = "titlebox" > 
+      <center>  
+        <h2 style="color:#006372;">World Map Network</h2>
+      </center> 
+    </div>
+    </center>
+
     
     <center> 
     <div class = "textbox" > 
@@ -124,8 +144,16 @@
       
   <!-- Show some findings -->
 
+  <center>
+    <div class = "titlebox" > 
+      <center>  
+        <h2 style="color:#006372;">Geographical Analysis</h2>
+      </center> 
+    </div>
+    </center>
+
+
   <center> 
-    <h3> Analysis</h3>
   <div class = "textbox" > 
     Analyzing the network based on geopgraphics shows that we have some connections across
     continents. 
@@ -133,8 +161,6 @@
   
   </center>
   
-
-
    
   <p> <br> </p>
 
