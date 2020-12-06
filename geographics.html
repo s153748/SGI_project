@@ -7,7 +7,7 @@
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 2.6; 
-    color: dimgrey;
+    color: #333333;
   }
 
   .topnav {
@@ -102,19 +102,21 @@
     
     <center> 
     <div class = "textbox" > 
-
+      We explore the locations both using a map plainly showing the locations. 
+      Next an interactive map with nodes and their links. 
+      Feel free to click around and explore.
     </div>
-  
 
+    <p> <br> </p>
+  
    <!-- Folium map and plotly map -->
 
     <div>
-      <iframe src="visualizations/folium_map.html"  height="470" width="1000"></iframe>  
+      <iframe src="visualizations/folium_map.html"  height="470" width="1200"></iframe>  
     </div>
 
-
     <div>
-      <iframe src="visualizations/plotly_map.html"  height="470" width="1000"></iframe>  
+      <iframe src="visualizations/plotly_map.html"  height="470" width="1200"></iframe>  
     </div>
   
   
@@ -126,10 +128,24 @@
 
     <p> <br> </p>
 
-    <!-- Networkx Analysis-->
-    <center> <h2 style="color:#006372;">Analysis of Network with Attributes</h2></center>
-      
     <center>
+      <div class = "titlebox" > 
+        <center>  
+          <h2 style="color:#006372;">Network with Attributes</h2>
+        </center> 
+      </div>
+      </center>
+  
+      
+
+    <!-- Networkx Analysis-->
+
+    
+  
+    <center>
+
+      <h3 style="color:#536872;">Visualization  </h3> 
+      
     <div class = "textbox" > 
       Here we instead show the network just with the continent attributes. 
     </div>
@@ -144,17 +160,10 @@
       
   <!-- Show some findings -->
 
-  <center>
-    <div class = "titlebox" > 
-      <center>  
-        <h2 style="color:#006372;">Geographical Analysis</h2>
-      </center> 
-    </div>
-    </center>
-
-
+ 
   <center> 
-  <div class = "textbox" > 
+    <h3 style="color:#536872;"> Analysis </h3>
+   <div class = "textbox" > 
     Analyzing the network based on geopgraphics shows that we have some connections across
     continents. 
   </div>
