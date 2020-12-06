@@ -67,31 +67,79 @@
   </div>
 
 
-<center>
-  <h2 style="color:#006372;">Full network graph</h2> 
+<center><h2 style="color:#006372;">Full network graph</h2></center>
 
+<center>
   <div class = "textbox" > 
-    On this page the you see the visualization of the network, both in the more pure form
-      with node positions found using the force 2 atlas algorithm
-      This is the giant connected component anno 2020. 
+
+    On this page, you can see the visualizations of the giant connected component of the network consisting
+    of 949 of th 1585 users.  The nodes are scaled according to their node degree, 
+    so that the nodes with the most connections to other nodes will appair with larger node size.
+    The nodes are positioned based on the <a href="https://en.wikipedia.org/wiki/Force-directed_graph_drawing">
+    Force Atlas 2 algorithm</a>, which is placing each node spatially depending on its connection to the other nodes.
+  
   </div>	
 
   <iframe src="visualizations/gcc.html"  height="500" width="1000"></iframe>
 
+</center>
 
+<center><h2 style="color:#006372;">Network Analysis</h2></center>
+
+<center>
+ <h3>Degree distribution</h3>
   <div class = "textbox" > 
-    For some basic stats about the network we have found.... 
+    We first looked into the degree distribution for in- and out-degree that revealed
   </div>
 
-  <iframe src="visualizations/degreedist.html"  height="500" width="1000"></iframe>
-    
-
-<div class = "textbox" > 
-  The most central users by in-degree and out-degree are also found. As well as the most influential
-  users based on the eigenvector centrality.
-</div>
+  <img src="visualizations/In_GCC.png" alt="Forest" width="500">
+  <img src="visualizations/Out_GCC.png" alt="Forest" width="500">
 
 
+  <div class = "textbox" > 
+
+    Both the in- and out-degree distributions are asymmetric as they are right
+     skewed with long tails. Although most users have zero or small degrees, there 
+     are a few users with a large degree as well. This indicates the presence a few 
+     users that are highly connected to other users in the network. 
+     These **highly connected hubs** of users can be seen as responsible for 
+     keeping the network connected. So a removal of one of the key users would 
+     have a huge impact on the network stucture. Since the hubs of key users 
+     are highly connected, they collect information about other key users fast, 
+     but they also spread information quickly to other users. 
+     The log-log plots of the distributions demonstrate that the network follows
+      the **power-law degree distribution** meaning that this network is **scale-free** . 
+      This is a typical property of **real world networks**.
+  
+  
+  <h3>Centrality</h3>
+
+  <div class = "textbox" > 
+    Next, we explored different centrality measures revealing some of the most central users according 
+    <b>degree </b>, <b>eigenvector</b> and <b>betweenness</b> centrality.
+  </div>
+
+  <h4> Degree centrality</h4>
+
+  <img src="tables/degree.png" alt="Forest" width="500">
+
+  <h4> Eigenvector and betweenness centrality</h4>
+  <img src="tables/eigen_between.png" alt="Forest" width="500">
+
+  <div class = "textbox" > 
+    From the tables it can be seen that some of the most followed users in the network are **amueller** 
+    and **ogrisel**, whereas **yupbank** is the user who follows most of the other users. 
+    Hence these three users are also the ones with most connections overall.  
+    We see that the users **ogrisel** and **silverstone1903** are central according 
+    to both degree- and eigenvector centrality. Further, the users **agramfort** and **yupfort** 
+    is has a lot of influence both when it comes to in and out-degree eigenvector centrality 
+    and betweenness centrality.
+  </div>
+
+
+</center>
+ 
+<p> <br> </p>	
 
 
 
