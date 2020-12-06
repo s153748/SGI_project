@@ -59,7 +59,7 @@
     }
   
    .titlebox {
-  background-color: lightgrey;
+  background-color: #f1f1f1;
   width: 1200px;
   padding: 1px;	  
   }
@@ -95,7 +95,7 @@
     <div class = "textbox" > 
       <h2 style="color:#006372;">Explore the network of users</h2>
   
-      On this page, you can explore the network of GitHub users both visually and ind terms of
+      On this page, you can explore the network of GitHub users both visually and in terms of
       an analysis. This is done for the giant connected component of the network consisting
       of 737 of th 1585 users. Further, we look into the texts from the user profiles and repository descriptions 
       combined with a sentiment analysis of the individual users.    
@@ -123,7 +123,7 @@
   
   </div>	
 
-  <iframe src="visualizations/gcc.html"  height="500" width="1000"></iframe>
+  <iframe src="visualizations/gcc.html"  height="500" width="1200"></iframe>
 
 </center>
 
@@ -143,8 +143,8 @@
     We first looked into the degree distribution for in- and out-degree that revealed
   </div>
 
-  <img src="visualizations/In_GCC.png" alt="Forest" width="500">
-  <img src="visualizations/Out_GCC.png" alt="Forest" width="500">
+  <img src="visualizations/In_GCC.png" alt="Forest" width="600">
+  <img src="visualizations/Out_GCC.png" alt="Forest" width="600">
 
 
   <div class = "textbox" > 
@@ -173,12 +173,18 @@
     <b>degree </b>, <b>eigenvector</b> and <b>betweenness</b> centrality.
   </div>
 
-  <h4> Degree centrality</h4>
+  <div class="row">
+    <div class="column">
+      <center> <h4>Degree centrality</h4></center>
+      
+  <img src="tables/degree.png" alt="Forest" width="600">
+    </div>
+    <div class="column">
+      <center> <h4> Eigenvector and betweenness centrality</h4></center>
+  <img src="tables/eigen_between.png" alt="Forest" width="600">
+    </div>
+  </div>
 
-  <img src="tables/degree.png" alt="Forest" width="500">
-
-  <h4> Eigenvector and betweenness centrality</h4>
-  <img src="tables/eigen_between.png" alt="Forest" width="500">
 
   <div class = "textbox" > 
     From the tables it can be seen that some of the most followed users in the network are **amueller** 
@@ -212,38 +218,24 @@
 
   <h4>Repository descriptions</h4>
 
-  <div class="row">
-    <div class="column">
-      <img src="visualizations/Repository descriptions - unigrams.png" alt="Snow" width="500"> 
-    </div>
-    <div class="column">
-      <img src="visualizations/Repository descriptions - bigrams.png" alt="Snow" width="500"> 
-    </div>
-  </div>
+  <img src="visualizations/Repository descriptions - unigrams.png" alt="Snow" width="600"> 
+  <img src="visualizations/Repository descriptions - bigrams.png" alt="Snow" width="600"> 
+  
 
-  <img src="tables/sent_desc.png" alt="Forest" width="500">
-
+ 
   <h4> User biographies </h4>
   
-  <div class="row">
-    <div class="column">
-      <img src="visualizations/User biographies - unigrams.png" alt="Snow" width="500"> 
-    </div>
-    <div class="column">
-      <img src="visualizations/User biographies - bigrams.png" alt="Snow" width="500"> 
-    </div>
-  </div>
+  
+      <img src="visualizations/User biographies - unigrams.png" alt="Snow" width="600"> 
+      <img src="visualizations/User biographies - bigrams.png" alt="Snow" width="600"> 
+ 
 
   
   <h4> Programming languages </h4>
-  <div class="row">
-    <div class="column">
+
       <img src="visualizations/Programming languages - unigrams.png" alt="Snow" width="500"> 
-    </div>
-    <div class="column">
       <img src="visualizations/Programming languages - bigrams.png" alt="Snow" width="500"> 
-    </div>
-  </div>
+  
 
   <div class = "textbox" > 
 
@@ -278,11 +270,11 @@
   <div class="row">
     <div class="column">
       <center><h4>Repository descriptions</h4></center>
-      <img src="tables/sent_desc.png" alt="Forest" width="500">
+      <img src="tables/sent_desc.png" alt="Forest" width="600">
     </div>
     <div class="column">
       <center><h4> User biographies </h4></center>
-      <img src="tables/sent_bio.png" alt="Forest" width="500">
+      <img src="tables/sent_bio.png" alt="Forest" width="600">
     </div>
   </div>
 
