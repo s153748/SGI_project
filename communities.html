@@ -82,6 +82,7 @@
   padding: 14px 16px;
   transition: 0.3s;
   font-size: 17px;
+  font-weight: bold;
   color: #006372;
 }
 
@@ -135,15 +136,24 @@
   
 <center>
   <div class = "textbox" > 
-    <h2 style="color:#006372;">Explore user communities</h2>
+    <h2 style="color:#006372;">Explore the coding communities</h2>
 
    
     On this page, we look into the coding communities within the network.
      Around <b>13</b> hidden communities were 
     found by the <a href="https://en.wikipedia.org/wiki/Louvain_method">Louvian Algorithm</a>,
     however a thorough analysis was only done for the top 5 largest ones. An overview of these
-    are given below followed by a section allowing you to check out each community more closely.
-    Simply <b>click</b> the <b>tabs</b>.
+    are given below followed by a section allowing you to check out each community more closely
+    just simply by <b>clicking</b> the <b>tabs</b>.
+    Here you will see a visualization of the network for the specific community
+     where the nodes are coloured by continent and 
+    again positioned based on Force Atlas 2 algorithm. Further, you will see 
+    wordclouds representing the most 
+    important words within the community for the user biographies and repository descriptions based on 
+    <a href="https://en.wikipedia.org/wiki/Tf%E2%80%93idf">TF-IDF</a>. 
+    The most used programming languages are also shown in a wordcloud. 
+
+
   
     </div>
 </center>
@@ -162,7 +172,7 @@
     <center>
 
       <img src="tables/com_overview.png" alt="Forest" width="500">
-      
+
       <img src="tables/com_text.png" alt="Forest" width="500">
 
 
@@ -196,23 +206,25 @@
     <p></p>
 
 <div id="Com1" class="tabcontent">
+  <p></p>
+  
+  <center> 
+    <div class = "textbox" > 
+      For <b>Community 1</b> we see that....
+    </div>
+  </center>
+
+  
+  <center> <h3>Visualization</h3>  </center> 
 
   <center> 
-  <div class = "textbox" > 
-    For community 1 we see that....
-  </div>
-
   <iframe src="visualizations/file0.html" height="470" width="1000"></iframe>
  </center> 
  
   <center> <h3>Wordclouds </h3> </center> 
  
   <center>
-  <div class = "textbox" > 
-    Then for the text analysis, we have the wordclouds showing the most used words
-      in the communities both in descriptions and bios
-  </div>
-
+  
   <div class="row">
     <div class="column">
       <center><h4 style="color:#536872;">Repository descriptions </h4>  </center>
@@ -226,29 +238,30 @@
 
   <center><h4 style="color:#536872;">Programming languages</h4> </center>
   <img src="visualizations/Programming languages_word0.png" alt="Mountains" width="400">
-
+ 
+  <p></b></p>
   </center> 
 </div>
 
 <div id="Com2" class="tabcontent">
 
-  <center> <h3>Community 2</h3>  </center> 
-
   <center> 
-  <div class = "textbox" > 
-    For community 2 we see that....
-  </div>
+    <div class = "textbox" > 
+      For <b>Community 2</b> we see that....
+    </div>
+  </center>
+   
 
+  <center> <h3>Visualization</h3>  </center> 
+
+  
+  <center> 
   <iframe src="visualizations/file1.html" height="470" width="1000"></iframe>
  </center> 
  
   <center> <h3>Wordclouds </h3> </center> 
  
   <center>
-  <div class = "textbox" > 
-    Then for the text analysis, we have the wordclouds showing the most used words
-      in the communities both in descriptions and bios
-  </div>
 
   <div class="row">
     <div class="column">
@@ -264,30 +277,30 @@
   <center><h4 style="color:#536872;">Programming languages</h4> </center>
   <img src="visualizations/Programming languages_word1.png" alt="Mountains" width="400">
 
+  <p></b></p>
   </center> 
 </div>
 
 
 <div id="Com3" class="tabcontent">
 
-  <center> <h3>Community 3 </h3>  </center> 
+  
+  <center> 
+    <div class = "textbox" > 
+      For <b>Community 3</b> we see that....
+    </div>
+  </center>
+   
+
+  <center> <h3>Visualization</h3>  </center> 
 
   <center> 
-  <div class = "textbox" > 
-    For community 3 we see that....
-  </div>
-
   <iframe src="visualizations/file2.html" height="470" width="1000"></iframe>
  </center> 
  
   <center> <h3>Wordclouds </h3> </center> 
  
   <center>
-  <div class = "textbox" > 
-    Then for the text analysis, we have the wordclouds showing the most used words
-      in the communities both in descriptions and bios
-  </div>
-
   <div class="row">
     <div class="column">
       <center><h4 style="color:#536872;">Repository descriptions </h4>  </center>
@@ -302,17 +315,22 @@
   <center><h4 style="color:#536872;">Programming languages</h4> </center>
   <img src="visualizations/Programming languages_word2.png" alt="Mountains" width="400">
 
+  <p></b></p>
+
   </center> 
  </div>
 
 <div id="Com4" class="tabcontent">
 
-  <center> <h3>Community 4 </h3>  </center> 
+  <center> 
+    <div class = "textbox" > 
+      For <b>Community 4</b> we see that....
+    </div>
+  </center>
+   
+  <center> <h3>Visualization</h3>  </center> 
 
   <center> 
-  <div class = "textbox" > 
-    For community 4 we see that....
-  </div>
 
   <iframe src="visualizations/file3.html" height="470" width="1000"></iframe>
   </center> 
@@ -320,11 +338,6 @@
   <center> <h3>Wordclouds </h3> </center> 
  
   <center>
-  <div class = "textbox" > 
-    Then for the text analysis, we have the wordclouds showing the most used words
-      in the communities both in descriptions and bios
-  </div>
-
   <div class="row">
     <div class="column">
       <center><h4 style="color:#536872;">Repository descriptions </h4>  </center>
@@ -339,17 +352,24 @@
   <center><h4 style="color:#536872;">Programming languages</h4> </center>
   <img src="visualizations/Programming languages_word3.png" alt="Mountains" width="400">
 
+  
+  <p></b></p>
+
   </center> 
 </div>
 
 <div id="Com5" class="tabcontent">
 
-  <center> <h3>Community 5 </h3>  </center> 
+  
+  <center> 
+    <div class = "textbox" > 
+      For <b>Community 5</b> we see that....
+    </div>
+  </center>
+
+  <center> <h3>Visualization</h3>  </center> 
 
   <center> 
-  <div class = "textbox" > 
-    For community 5 we see that....
-  </div>
 
   <iframe src="visualizations/file4.html" height="470" width="1000"></iframe>
  </center> 
@@ -357,10 +377,6 @@
   <center> <h3>Wordclouds </h3> </center> 
  
   <center>
-  <div class = "textbox" > 
-    Then for the text analysis, we have the wordclouds showing the most used words
-      in the communities both in descriptions and bios
-  </div>
 
   <div class="row">
     <div class="column">
@@ -375,7 +391,8 @@
 
   <center><h4 style="color:#536872;">Programming languages</h4> </center>
   <img src="visualizations/Programming languages_word4.png" alt="Mountains" width="400">
-
+  
+  <p></b></p>
   </center> 
 </div>
 
