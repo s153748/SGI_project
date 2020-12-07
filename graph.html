@@ -61,6 +61,7 @@
    .titlebox {
   background-color: #f1f1f1;
   width: 1200px;
+  height: 80px;
   padding: 1px;	  
   }
 
@@ -95,8 +96,7 @@
     <div class = "textbox" > 
       <h2 style="color:#006372;">Explore the network of users</h2>
   
-      On this page, you can explore the network of GitHub users both visually and in terms of
-      an analysis. This is done for the giant connected component of the network consisting
+      On this page, you can explore the network of GitHub users both visually and analytically. This is done for the giant connected component of the network consisting
       of 737 of th 1585 users. Further, we look into the texts from the user profiles and repository descriptions 
       combined with a sentiment analysis of the individual users.    
     </div>	
@@ -156,14 +156,14 @@
      skewed with long tails. Although most users have zero or small degrees, there 
      are a few users with a large degree as well. This indicates the presence a few 
      users that are highly connected to other users in the network. 
-     These **highly connected hubs** of users can be seen as responsible for 
+     These <b>highly connected hubs</b> of users can be seen as responsible for 
      keeping the network connected. So a removal of one of the key users would 
      have a huge impact on the network stucture. Since the hubs of key users 
      are highly connected, they collect information about other key users fast, 
      but they also spread information quickly to other users. 
      The log-log plots of the distributions demonstrate that the network follows
-      the **power-law degree distribution** meaning that this network is **scale-free** . 
-      This is a typical property of **real world networks**.
+      the <b>power-law degree distribution</b> meaning that this network is <b>scale-free</b>. 
+      This is a typical property of <b>real world networks</b>.
   </div>
 
   </center>
@@ -190,11 +190,16 @@
 
 
   <div class = "textbox" > 
-    From the tables it can be seen that some of the most followed users in the network are **amueller** 
-    and **ogrisel**, whereas **yupbank** is the user who follows most of the other users. 
+    From the tables it can be seen that some of the most followed users in the network are 
+    <a href="https://github.com/amueller"> amueller</a>
+    and  <a href="https://github.com/ogrisel">ogrisel</a>, whereas 
+    <a href="https://github.com/yupbank">yupbank</a> is the user who follows most of the other users. 
     Hence these three users are also the ones with most connections overall.  
-    We see that the users **ogrisel** and **silverstone1903** are central according 
-    to both degree- and eigenvector centrality. Further, the users **agramfort** and **yupfort** 
+    We see that the users ogrisel and <a href="https://github.com/silverstone1903">silverstone1903</a>
+     are central according 
+    to both degree- and eigenvector centrality. Further, the users 
+    <a href="https://github.com/agramfort">agramfort</a>and  
+    <a href="https://github.com/yupfort">yupfort</a>
     is has a lot of influence both when it comes to in and out-degree eigenvector centrality 
     and betweenness centrality.
   </div>
@@ -216,41 +221,41 @@
 
   <div class = "textbox" > 
     We analysed the words of the user biographies and repository descriptions based on term frequency. 
-    Here, we also included the languages used in the repositories, to better get an overview of the 
+    Here, we also included the programming languages used in the repositories to better get an overview of the 
     most used languages.  We present both the most frequent single words as well as word pairs. 
   </div>
 
 
   <h4 style="color:#536872;">Repository descriptions</h4>
 
-  <img src="visualizations/Repository descriptions - unigrams.png" alt="Snow" width="500"> 
-  <img src="visualizations/Repository descriptions - bigrams.png" alt="Snow" width="500"> 
+  <img src="visualizations/Repository descriptions - unigrams.png" alt="Snow" width="400"> 
+  <img src="visualizations/Repository descriptions - bigrams.png" alt="Snow" width="400"> 
   
 
  
   <h4 style="color:#536872;"> User biographies </h4>
   
   
-      <img src="visualizations/User biographies - unigrams.png" alt="Snow" width="500"> 
-      <img src="visualizations/User biographies - bigrams.png" alt="Snow" width="500"> 
+      <img src="visualizations/User biographies - unigrams.png" alt="Snow" width="400"> 
+      <img src="visualizations/User biographies - bigrams.png" alt="Snow" width="400"> 
  
 
   
   <h4 style="color:#536872;"> Programming languages </h4>
 
-      <img src="visualizations/Programming languages - unigrams.png" alt="Snow" width="500"> 
-      <img src="visualizations/Programming languages - bigrams.png" alt="Snow" width="500"> 
+      <img src="visualizations/Programming languages - unigrams.png" alt="Snow" width="400"> 
+      <img src="visualizations/Programming languages - bigrams.png" alt="Snow" width="400"> 
   
 
   <div class = "textbox" > 
 
-    It is seen from the bios that many users seem to be engineers, scientiest, students, 
-    phds, researchers and developers indicating the network has well educated and hard working users. 
-    Adding context from the words pairs, we can even add that this mostly regards software, computer and 
-    data science as well as deep learning. Python is big not only for the programming languages, but 
+    It is seen from the bios that many users seem to be <i>engineers, scientiest, students, 
+    phds, researchers</i> and <i>developers<i> indicating the network has well educated and hard working users. 
+    Adding context from the words pairs, we can even add that this mostly regards <i>software, computer </i> and 
+    <i>data science</i> as well as <i>deep learning</i>. Python is big not only for the programming languages, but 
     also for the repository descriptions, and a bit smaller for the bios. So GitHub is definitely 
     popular for Python users and escpecially with use of Jupyter notebook. Though, we also observe 
-    that many other languages are also used. 
+    that many other languages are used.
  
   </div>
  
@@ -261,35 +266,38 @@
     <h3> Sentiment Analysis</h3>
 
     <div class = "textbox" > 
-      Here, we introduce **sentiment analysis** of the repository descriptions and biographies 
+      Here, we introduce <b>sentiment analysis</b>> of the repository descriptions and biographies 
       written by the individual users. We have determined the happiness or sadness for each user 
       by comparing the words in the texts to a predefined list of words with a related happiness score. 
       This list is available from the article 
       <a href=” http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0026752” > Temporal 
         Patterns of Happiness and Information in a Global Social Network: Hedonometrics and Twitter</a>. 
-        We present top 5 happiest and saddest users based on their repository descriptions and biographies.
-     
+        We present top happiest and saddest users based on their repository descriptions and biographies.
     </div>
 
 
   <div class="row">
     <div class="column">
       <center><h4 style="color:#536872;">Repository descriptions</h4></center>
-      <img src="tables/sent_desc.png" alt="Forest" width="500">
+      <img src="tables/sent_desc.png" alt="Forest" width="400">
     </div>
     <div class="column">
       <center><h4 style="color:#536872;"> User biographies </h4></center>
-      <img src="tables/sent_bio.png" alt="Forest" width="500">
+      <img src="tables/sent_bio.png" alt="Forest" width="400">
     </div>
   </div>
 
 
   <div class = "textbox" > 
 
-    Looking at the sentiment scores, we do see that the user **gitter-badger**  has a very 
+    Looking at the sentiment scores, we do see that the user 
+    <a href="https://github.com/gitter-badger"> gitter-badger</a> has a very 
     high sentiment score and is quite positive using words as love and happiness, whereas 
-    some users as **Qovaxx** is deemed quite negative due writing about cancer. It can also
-     be concluded that users such as **dangsonbk** and **weakish** are probably not worth 
+    some users as <a href="https://github.com/Qovaxx"> Qovaxx</a> is deemed quite negative 
+    due writing about cancer. It can also
+     be concluded that users such as 
+     <a href="https://github.com/dangsonbk">dangsonbk</a> and 
+     <a href="https://github.com/weakish"> weakish</a> are probably not worth 
      following due bios with words as lazy and lost.
  
   </div>

@@ -58,9 +58,10 @@
       width: 1200px;	  
     }
   
-   .titlebox {
+  .titlebox {
   background-color: #f1f1f1;
   width: 1200px;
+  height: 80px;
   padding: 1px;	  
   }
 	
@@ -87,7 +88,7 @@
       <h2 style="color:#006372;">Explore geographics of users</h2>
       On this page, we take a closer look at the geographical location of the users and 
     trends regarding the different continents. Here we exclusively look at the users that 
-    actually have a location attached to them, that is only 949 out of the total 1585.
+    actually have a location attached to them, which is only 949 out of the total 1585.
     </div>	
     </center>
 
@@ -138,7 +139,7 @@
 
     </div>
 
-    <img src="tables/cont_con.png" alt="Forest" width="500">
+    <img src="tables/cont_con.png" alt="Forest" width="800">
 
   </center>
 
@@ -156,14 +157,29 @@
 
     <!-- Networkx Analysis-->
 
-    
-  
+   
     <center>
+
+      <h3> Overview </h3>
+      <div class = "textbox" > 
+       From the initial analysis of the continents, we again see an overall trend 
+       of using the Python programming language, however it seems that in 
+       Asia they are more into using JavaScript than in Europe where they prefer C#. 
+       In North America, these three languages are all represented in the top three most used. 
+       By inspecting the sentiments, no significant difference can be seen. Interestingly, 
+       it seems that the despite the less number of users from Oceania, 
+       the users on average have the second highest number of followers, that is 329.
+     </div>
+   
+       <img src="tables/cont_overview.png" alt="Forest" width="800">
+     
 
       <h3>Visualization  </h3> 
       
     <div class = "textbox" > 
-      Here we instead show the network just with the continent attributes. 
+      Here we instead show the network where scaled according to their node degree and
+      again positioned based on the <a href="https://en.wikipedia.org/wiki/Force-directed_graph_drawing">
+      Force Atlas 2 algorithm</a> - now we have just colored the nodes based on their continent attribute. 
     </div>
     
     <p></p>
@@ -173,18 +189,11 @@
       <iframe src="visualizations/networkx_map.html"  height="470" width="1200"></iframe>     
     </div>
     
-    </center>
       
   <!-- Show some findings -->
 
  
-  <center> 
-    <h3> Analysis </h3>
-   <div class = "textbox" > 
-    Analyzing the network based on geopgraphics shows that we have some connections across
-    continents. 
-  </div>
-  
+
   </center>
   
    
