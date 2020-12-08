@@ -96,9 +96,14 @@
     <div class = "textbox" > 
       <h2 style="color:#006372;">Explore the network of users</h2>
   
-      On this page, you can explore the network of GitHub users both visually and analytically. This is done for the giant connected component of the network consisting
-      of 737 of th 1585 users. Further, we look into the texts from the user profiles and repository descriptions 
-      combined with a sentiment analysis of the individual users.    
+      On this page, you can explore the network of GitHub users.
+      The total network consisted of 1585 nodes and 2092 connections, however we
+      mainly look into the <b>giant connected component</b> consisting of significantly less 
+      nodes being <b>737</b> nodes and <b>2072</b> edges. We analyse the network characteristics 
+      as well as the <b>text </b>
+      from the user profiles and repository descriptions
+      by <b>term frequency</b>. This is then
+      combined with a <b>sentiment analysis</b> of the individual users.    
     </div>	
     </center>
 
@@ -107,7 +112,7 @@
     <center>
     <div class = "titlebox" > 
       <center>  
-      <h2 style="color:#006372;">Graph visualization</h2>
+      <h2 style="color:#006372;">Visualization</h2>
       </center> 
     </div>
     </center>
@@ -119,7 +124,9 @@
     The nodes are scaled according to their node degree, 
     so that the nodes with the most connections to other nodes will appair with larger node size.
     The nodes are positioned based on the <a href="https://en.wikipedia.org/wiki/Force-directed_graph_drawing">
-    Force Atlas 2 algorithm</a>, which is placing each node spatially depending on its connection to the other nodes.
+    Force Atlas 2 algorithm</a>, which is placing each 
+    node spatially depending on its connection to the other nodes. We already
+    here see that there are some very dominant users. <b>Hover</b> over the nodes to see who.
   
   </div>	
 
@@ -134,7 +141,7 @@
 <center>
   <div class = "titlebox" > 
     <center>  
-      <h2 style="color:#006372;">Network Analysis</h2>
+      <h2 style="color:#006372;">Analysis</h2>
     </center> 
   </div>
   </center>
@@ -176,31 +183,28 @@
     <div class="column">
       <center> <h4 style="color:#536872;">Degree centrality</h4></center>
       
-  <img src="tables/degree.png" alt="Forest" width="500">
+  <img src="tables/degree.png" alt="Forest" width="600">
     </div>
     <div class="column">
       <center> <h4 style="color:#536872;"> Eigenvector and betweenness centrality</h4></center>
-  <img src="tables/eigen_between.png" alt="Forest" width="500">
+  <img src="tables/eigen_between.png" alt="Forest" width="600">
     </div>
   </div>
 
 
   <div class = "textbox" > 
 
-    From exploring the different centrality measures we could reveal some of the most central users according 
+    From exploring the different centrality measures, we could reveal some of the most
+     central users according to
     <b>degree </b>, <b>eigenvector</b> and <b>betweenness</b> centrality.
     From the tables, it can be seen that some of the most followed users in the network are 
     <a href="https://github.com/amueller"> amueller</a>
     and  <a href="https://github.com/ogrisel">ogrisel</a>, whereas 
     <a href="https://github.com/yupbank">yupbank</a> is the user who follows most of the other users. 
     Hence these three users are also the ones with most connections overall.  
-    We see that the users ogrisel and <a href="https://github.com/silverstone1903">silverstone1903</a>
-     are central according 
-    to both degree- and eigenvector centrality. Further, the users 
-    <a href="https://github.com/agramfort">agramfort</a>and  
-    <a href="https://github.com/yupfort">yupfort</a>
-    is has a lot of influence both when it comes to in and out-degree eigenvector centrality 
-    and betweenness centrality.
+    We see that the users ogrisel, <a href="https://github.com/agramfort">agramfort</a> and  
+    <a href="https://github.com/yupfort">yupfort</a> are central according 
+    to eigenvector centrality meaning that they have <b>high influence</b> within the network.
   </div>
 </center>
 
@@ -219,8 +223,9 @@
   <h3>Word clouds</h3>
 
   <div class = "textbox" > 
-    We analysed the words of the user biographies and repository descriptions based on term frequency. 
-    Here, we also included the programming languages used in the repositories to better get an overview of the 
+    We analysed the words of the user biographies and repository descriptions. 
+    Here, we also included the programming languages used in the repositories 
+    to better get an overview of the 
     most used languages.  We present both the most frequent single words as well as word pairs. 
   </div>
 
@@ -250,11 +255,12 @@
 
     It is seen from the bios that many users seem to be <i>engineers, scientiest, students, 
     phds, researchers</i> and <i>developers</i> indicating the network has well educated and hard working users. 
-    Adding context from the words pairs, we can even add that this mostly regards <i>software, 
+    Adding context from the words pairs, this mostly regards <i>software, 
       computer </i> and 
-    <i>data science</i> as well as <i>deep learning</i>. Python is big not only for the programming languages, but 
-    also for the repository descriptions, and a bit smaller for the bios. So GitHub is definitely 
-    popular for Python users and escpecially with use of Jupyter notebook. Though, we also observe 
+    <i>data science</i> as well as <i>deep learning</i>. Python is big not only for 
+    the programming languages, but 
+    also for the repository descriptions. So GitHub is definitely 
+    popular for <b>Python</b> users and escpecially combined with <b>Jupyter notebook</b>. Though, we also observe 
     that many other languages are used.
  
   </div>
@@ -279,11 +285,11 @@
   <div class="row">
     <div class="column">
       <center><h4 style="color:#536872;">Repository descriptions</h4></center>
-      <img src="tables/sent_desc.png" alt="Forest" width="300">
+      <img src="tables/sent_desc.png" alt="Forest" width="400">
     </div>
     <div class="column">
       <center><h4 style="color:#536872;"> User biographies </h4></center>
-      <img src="tables/sent_bio.png" alt="Forest" width="300">
+      <img src="tables/sent_bio.png" alt="Forest" width="400">
     </div>
   </div>
 
@@ -292,13 +298,14 @@
 
     Looking at the sentiment scores, we do see that the user 
     <a href="https://github.com/gitter-badger"> gitter-badger</a> has a very 
-    high sentiment score and is quite positive using words as love and happiness, whereas 
+    high sentiment score and is quite positive using words as <i>love</i> and <i>happiness</i>, 
+    whereas 
     some users as <a href="https://github.com/Qovaxx"> Qovaxx</a> is deemed quite negative 
-    due writing about cancer. It can also
+    due writing about <i>cancer</i>. It can also
      be concluded that users such as 
      <a href="https://github.com/dangsonbk">dangsonbk</a> and 
      <a href="https://github.com/weakish"> weakish</a> are probably not worth 
-     following due bios with words as lazy and lost.
+     following due bios with words as <i>lazy </i>and <i>lost</i>.
  
   </div>
 

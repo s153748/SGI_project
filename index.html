@@ -78,6 +78,18 @@
 .btn:hover {
   background-color: #d3d3d3;
 }
+
+.row {
+    display: flex;
+    margin-left:-5px;
+    margin-right:-5px;
+  }
+  
+  .column {
+    flex: 33.3%;
+    padding: 5px;
+  }
+  
   
 </style>
 </head>
@@ -100,7 +112,7 @@
     This webpage is made as part of the final project in the course 
     <a href="https://kurser.dtu.dk/course/02805">02805 Social Graphs and
       Interactions</a> at the Technical University of Denmark (DTU) in the Fall 2020.  
-     We wanted to use <b>graph theory</b> to gain insight into the social network of GitHub users.
+      We wanted to use <b>graph theory</b> to gain insight into the social network of GitHub users.
 
      We scraped the profiles of the owners as well as the contributers of the 70 top repositories 
       matching a search of 
@@ -110,21 +122,31 @@
        overall <b>connections</b>. We wanted to identify coding <b>communities</b> and their vibes to discover
         who are the most popular users and who you should follow to keep up with the trends. </br>
 
-        <b>Click play </b>to get an introduction to the page or 
+        <p></p>
+
+        <b>Click play </b>to get an introduction to the page or <b>click buttons </b>to 
         <b>download</b> our data or notebook or both straightaway.
       <p></p>
 
-      <center>
-      <a href="data/final_data.csv" download>
-        <button class="btn"> Dataset (download)</button>
-      </a>    </br>
-      <a href="https://nbviewer.jupyter.org/github/s153748/s153748.github.io/blob/main/Explainer_notebook.ipynb" target="_blank">
-        <button class="btn"> iPython Notebook (preview)</button>
-      </a></br>
-      <a href="Explainer_notebook.ipynb" download>
-        <button class="btn"> iPython Notebook (download)</button>
-      </a>
-      </center>
+      <div class="row">
+        <div class="column">
+          <a href="data/final_data.csv" download>
+            <button class="btn"> Dataset (download)</button>
+          </a>   
+         
+        </div>
+        <div class="column">
+          <a href="https://nbviewer.jupyter.org/github/s153748/s153748.github.io/blob/main/Explainer_notebook.ipynb" target="_blank">
+            <button class="btn"> iPython Notebook (preview)</button>
+          </a>
+        </div>
+        <div class="column">
+          <a href="Explainer_notebook.ipynb" download>
+            <button class="btn"> iPython Notebook (download)</button>
+          </a>
+        </div>
+      </div>
+    
 
      
     <p> </br></p>
