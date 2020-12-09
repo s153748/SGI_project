@@ -96,13 +96,15 @@
       <h2 style="color:#006372;">Explore the network of users</h2>
   
       On this page, you can explore the network of GitHub users.
-      The total network consisted of 1585 nodes and 2092 connections, however we
-      look at the <b>giant connected component</b> consisting of significantly less 
-      nodes being <b>737</b> nodes and <b>2072</b> edges. We analyse the network <b>characteristics</b> as well as the text
+      The total network consisted of 1585 nodes and 2092 connections, however only
+      the <b>giant connected component</b> is shown here consisting of significantly less 
+      nodes being <b>737</b> nodes and <b>2072</b> edges. The network <b>characteristics</b> are analysed
+      as well as the text
       from the user profiles and repository descriptions
       by <b>term frequency</b>. This is then
       combined with a <b>sentiment analysis</b> of the individual users. 
-      Additionally, we look into the users based on total stars, forks, followers and following in order to
+      Additionally, the users are analysed based on their total stars, forks, followers as well as the number of
+      users they follow themselves in order to
       see who are initially the most <b>popular users</b>.
     </div>	
     </center>
@@ -125,8 +127,8 @@
     so that the nodes with the most connections to other nodes will appair with larger node size.
     The nodes are positioned based on the <a href="https://en.wikipedia.org/wiki/Force-directed_graph_drawing">
     Force Atlas 2 algorithm</a>, which is placing each 
-    node spatially depending on its connection to the other nodes. We already
-    here see that there are some very dominant users. <b>Hover</b> over the nodes to see who.
+    node spatially depending on its connection to the other nodes. Here it can already
+    be seen that there are some very dominant users. <b>Hover</b> over the nodes to see who.
   
   </div>	
 
@@ -170,7 +172,7 @@
 
     Both the in- and out-degree distributions are asymmetric as they are right
      skewed with long tails. Although most users have zero or small degrees, there 
-     are a few users with a large degree as well. This indicates the presence a few 
+     are a few users with a large degree as well. This indicates the presence of a few 
      users that are highly connected to other users in the network. 
      These <b>highly connected hubs</b> of users can be seen as responsible for 
      keeping the network connected. So a removal of one of the key users would 
@@ -206,15 +208,15 @@
 
   <div class = "textbox" > 
 
-    From exploring the different centrality measures, we can reveal some of the most
+    From exploring the different centrality measures, some of the most
      central users according to
-    <b>degree </b>-, <b>eigenvector</b>- and <b>betweenness</b> centrality.
+    <b>degree </b>-, <b>eigenvector</b>- and <b>betweenness</b> centrality were revealed.
     It can be seen that some of the most followed users in the network are 
     <a href="https://github.com/amueller"> amueller</a>
     and  <a href="https://github.com/ogrisel">ogrisel</a>, whereas 
     <a href="https://github.com/yupbank">yupbank</a> is the user who follows most of the other users. 
     Hence these three users are also the ones with most connections overall.  
-    We see that the users ogrisel, <a href="https://github.com/agramfort">agramfort</a> and  
+    The users ogrisel, <a href="https://github.com/agramfort">agramfort</a> and  
     yupbank are central according 
     to eigenvector centrality meaning that they have <b>high influence</b> within the network.
   </div>
@@ -249,16 +251,18 @@
   </div>
 
   <div class = "textbox" > 
-    From the barcharts, we can conclude that a very popular user is 
-    <a href="https://github.com/llSourcell">llSourcell</a> with over 35K+ followers.
+    From the barcharts, it can be concluded that <a href="https://github.com/llSourcell">llSourcell</a> 
+    is a very popular user with over 35K+ followers.
     He has a <a href="www.youtube.com/c/sirajraval">youtube channel</a>,
     and is also in the top 5 for
      having most total stars and total forks across his repositories. The user 
      <a href="https://github.com/rasbt">rasbt</a> is also
-     mentioned in top 5 for these three variables and is a professor related to academia. The user <a href="https://github.com/jwasham">jwasham</a> is also mentioned in top 
+     mentioned in top 5 for these three variables and is a user more related to academia. 
+     The user <a href="https://github.com/jwasham">jwasham</a> is also mentioned in top 
     5 and is the user with most stars across his repositories. 
      He has a blog, <a href="https://startupnextdoor.com">startupnextdoor</a>,
-    where he shares leanings from running and starting web businesses. 
+    where he shares leanings from running and starting web businesses, 
+    thereby being more connected to industry. 
   </div>
 
 
@@ -280,10 +284,10 @@
   <h3>Word clouds</h3>
 
   <div class = "textbox" > 
-    We analysed the words of the user biographies and repository descriptions. 
-    Here, we also included the programming languages used in the repositories 
-    to better get an overview of the 
-    most used languages.  We present both the most frequent <b>single words</b> as well as <b>word pairs</b>. 
+    Here the most frequent <b>single words</b> as well as <b>word pairs</b> within
+    user biographies and repository descriptions are shown. 
+    The programming languages used in the repositories are also shown
+    to get an overview of the most popular languages.  
   </div>
 
 
@@ -311,14 +315,16 @@
   <div class = "textbox" > 
 
     It is seen from the biographies that many users seem to be <i>engineers, scientiest, students, 
-    phds, researchers</i> and <i>developers</i> indicating the network has well educated and hard working users. 
-    Adding context from the words pairs, this mostly regards <i>software, 
+    phds, researchers</i> and <i>developers</i> indicating that the network has well educated 
+    and hard working users. 
+    Adding context from the words pairs this mostly regards <i>software, 
       computer </i> and 
     <i>data science</i> as well as <i>deep learning</i>. Python is big not only for 
-    the programming languages, but 
+    the programming languages but 
     also for the repository descriptions. So GitHub is definitely 
-    popular for <b>Python</b> users and escpecially combined with <b>Jupyter notebook</b>. Though, we also observe 
-    that many other languages are used.
+    popular for <b>Python</b> users and escpecially combined with <b>Jupyter notebook</b>. 
+    Though, it is observed
+    that many other languages are used as well.
  
   </div>
  
@@ -329,13 +335,15 @@
     <h3> Sentiment Analysis</h3>
 
     <div class = "textbox" > 
-      Here, we introduce <b>sentiment analysis</b> of the repository descriptions and biographies 
-      written by the individual users. We have determined the happiness or sadness for each user 
+      A <b>sentiment analysis</b> of the repository descriptions and biographies 
+      written by the individual users is presented below. The happiness or sadness for each user 
+      was determined
       by comparing the words in the texts to a predefined list of words with a related <b>happiness score</b>. 
       This list is available from the article 
       <a href=” http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0026752” > Temporal 
         Patterns of Happiness and Information in a Global Social Network: Hedonometrics and Twitter</a>. 
-        We present top happiest and saddest users based on their repository descriptions and biographies.
+        Below the top happiest and saddest users based on their repository descriptions and biographies 
+        are presented.
     </div>
 
 
@@ -353,7 +361,7 @@
 
   <div class = "textbox" > 
 
-    Looking at the sentiment scores, we do see that the user 
+    Looking at the sentiment scores, it is seen that the user 
     <a href="https://github.com/gitter-badger"> gitter-badger</a> has a very 
     high sentiment score and is quite positive using words as <i>love</i> and <i>happiness</i>, 
     whereas 
@@ -362,7 +370,9 @@
      be concluded that users such as 
      <a href="https://github.com/dangsonbk">dangsonbk</a> and 
      <a href="https://github.com/weakish"> weakish</a> are probably not worth 
-     following due biographies with words as <i>lazy </i>and <i>lost</i>.
+     following due biographies with words as <i>lazy </i>and <i>lost</i>. However this 
+     obviously depends on what kind of users you are interested in.
+
  
   </div>
 
