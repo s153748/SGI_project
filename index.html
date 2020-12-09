@@ -65,17 +65,27 @@
   padding: 1px;	  
   }
 
-  .btn {
-  background-color: #f1f1f1;
-  border: none;
-  color: #333333;
-  padding: 12px 30px;
-  cursor: pointer;
-  font-size: 12px;
+.btn-group button {
+  background-color: #f1f1f1; 
+  color: #333333; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
 }
 
-/* Darker background on mouse-over */
-.btn:hover {
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
   background-color: #d3d3d3;
 }
 
@@ -130,25 +140,27 @@
     </div>
     </center>
 
-      <center>
-         <a href="data/final_data.csv" download>
-            <button class="btn"> Dataset (download)</button>
-          </a>   
-   
-          <a href="https://nbviewer.jupyter.org/github/s153748/s153748.github.io/blob/main/Explainer_notebook.ipynb" target="_blank">
-            <button class="btn"> iPython Notebook (preview)</button>
-          </a>
+    <center>
+      <div class="btn-group">
+        <a href="data/final_data.csv" download>
+          <button class="btn"> Dataset (download)</button>
+        </a>  
+        <a href="https://nbviewer.jupyter.org/github/s153748/s153748.github.io/blob/main/Explainer_notebook.ipynb" target="_blank">
+          <button class="btn"> iPython Notebook (preview)</button>
+        </a>
+  
+        <a href="Explainer_notebook.ipynb" download>
+          <button class="btn"> iPython Notebook (download)</button>
+        </a>
+  
+        <a href="https://github.com/s153748/s153748.github.io" target="_blank">
+          <button class="btn"> Github Page</button>
+        </a>
+  
+      </div>
+
+    </center>
     
-          <a href="Explainer_notebook.ipynb" download>
-            <button class="btn"> iPython Notebook (download)</button>
-          </a>
-
-          <a href="https://github.com/s153748/s153748.github.io" target="_blank">
-            <button class="btn"> Github Page</button>
-          </a>
-
-          
-      </center>
          
     <p> </br></p>
       
