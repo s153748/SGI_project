@@ -97,9 +97,8 @@
   
       On this page, you can explore the network of GitHub users.
       The total network consisted of 1585 nodes and 2092 connections, however we
-      mainly look into the <b>giant connected component</b> consisting of significantly less 
-      nodes being <b>737</b> nodes and <b>2072</b> edges. We analyse the network characteristics 
-      as well as the <b>text </b>
+      look at the <b>giant connected component</b> consisting of significantly less 
+      nodes being <b>737</b> nodes and <b>2072</b> edges. We analyse the network <b>characteristics</b> as well as the text
       from the user profiles and repository descriptions
       by <b>term frequency</b>. This is then
       combined with a <b>sentiment analysis</b> of the individual users. 
@@ -150,9 +149,21 @@
 
 <center>
  <h3>Degree distribution</h3>
- 
-  <img src="visualizations/In_GCC.png" alt="Forest" width="600">
-  <img src="visualizations/Out_GCC.png" alt="Forest" width="600">
+
+ <div class="row">
+  <div class="column">
+    <center> <h4 style="color:#536872;">IN degree</h4></center>
+    
+    <img src="visualizations/In_GCC.png" alt="Forest" width="600">
+  </div>
+  <div class="column">
+    <center> <h4 style="color:#536872;"> OUT degree</h4></center>
+
+    <img src="visualizations/Out_GCC.png" alt="Forest" width="600">
+  </div>
+</div>
+
+
 
 
   <div class = "textbox" > 
@@ -195,10 +206,10 @@
 
   <div class = "textbox" > 
 
-    From exploring the different centrality measures, we could reveal some of the most
+    From exploring the different centrality measures, we can reveal some of the most
      central users according to
-    <b>degree </b>, <b>eigenvector</b> and <b>betweenness</b> centrality.
-    From the tables, it can be seen that some of the most followed users in the network are 
+    <b>degree </b>-, <b>eigenvector</b>- and <b>betweenness</b> centrality.
+    It can be seen that some of the most followed users in the network are 
     <a href="https://github.com/amueller"> amueller</a>
     and  <a href="https://github.com/ogrisel">ogrisel</a>, whereas 
     <a href="https://github.com/yupbank">yupbank</a> is the user who follows most of the other users. 
@@ -207,20 +218,12 @@
     yupbank are central according 
     to eigenvector centrality meaning that they have <b>high influence</b> within the network.
   </div>
+
 </center>
-
-<p> <br> </p>
-
-<center>
-  <div class = "titlebox" > 
-    <center>  
-      <h2 style="color:#006372;">Users</h2>
-    </center> 
-  </div>
-  </center>
-
-  <center>
       
+<center>
+  <h3 >User popularity</h3>
+
   <div class="row">
     <div class="column">
       <center> <h4 style="color:#536872;">The most popular users</h4></center>
@@ -246,14 +249,13 @@
   </div>
 
   <div class = "textbox" > 
-    From the barcharts, we can conclude that the most popular user is 
-    <a href="https://github.com/llSourcell">llSourcell</a>,
-    he has a <a href="www.youtube.com/c/sirajraval">youtube channel</a>,
+    From the barcharts, we can conclude that a very popular user is 
+    <a href="https://github.com/llSourcell">llSourcell</a> with over 35K+ followers.
+    He has a <a href="www.youtube.com/c/sirajraval">youtube channel</a>,
     and is also in the top 5 for
-     having most total_stars and total_forks.  The user 
-     <a href="https://github.com/jrasbt">rasbt</a>
-     mentioned in top 5 for these three variables and is related to the University of 
-     Wisconsin–Madison. The user <a href="https://github.com/jwasham">jwasham</a> is also mentioned in top 
+     having most total stars and total forks across his repositories. The user 
+     <a href="https://github.com/rasbt">rasbt</a> is also
+     mentioned in top 5 for these three variables and is a professor related to academia. The user <a href="https://github.com/jwasham">jwasham</a> is also mentioned in top 
     5 and is the user with most stars across his repositories. 
      He has a blog, <a href="https://startupnextdoor.com">startupnextdoor</a>,
     where he shares leanings from running and starting web businesses. 
@@ -281,7 +283,7 @@
     We analysed the words of the user biographies and repository descriptions. 
     Here, we also included the programming languages used in the repositories 
     to better get an overview of the 
-    most used languages.  We present both the most frequent single words as well as word pairs. 
+    most used languages.  We present both the most frequent <b>single words</b> as well as <b>word pairs</b>. 
   </div>
 
 
@@ -308,7 +310,7 @@
 
   <div class = "textbox" > 
 
-    It is seen from the bios that many users seem to be <i>engineers, scientiest, students, 
+    It is seen from the biographies that many users seem to be <i>engineers, scientiest, students, 
     phds, researchers</i> and <i>developers</i> indicating the network has well educated and hard working users. 
     Adding context from the words pairs, this mostly regards <i>software, 
       computer </i> and 
@@ -329,7 +331,7 @@
     <div class = "textbox" > 
       Here, we introduce <b>sentiment analysis</b> of the repository descriptions and biographies 
       written by the individual users. We have determined the happiness or sadness for each user 
-      by comparing the words in the texts to a predefined list of words with a related happiness score. 
+      by comparing the words in the texts to a predefined list of words with a related <b>happiness score</b>. 
       This list is available from the article 
       <a href=” http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0026752” > Temporal 
         Patterns of Happiness and Information in a Global Social Network: Hedonometrics and Twitter</a>. 
@@ -360,7 +362,7 @@
      be concluded that users such as 
      <a href="https://github.com/dangsonbk">dangsonbk</a> and 
      <a href="https://github.com/weakish"> weakish</a> are probably not worth 
-     following due bios with words as <i>lazy </i>and <i>lost</i>.
+     following due biographies with words as <i>lazy </i>and <i>lost</i>.
  
   </div>
 
