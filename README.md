@@ -6,8 +6,10 @@ In this project, we used graph theory and natural language processing to gain in
 
 ![network](/visualizations/network.png)
 
+
+
 ![map2](/visualizations/map2.png)
 
-![degree](/visualizations/degree.png)
+
 
 ![map1](/visualizations/map1.png)
