@@ -1,4 +1,4 @@
-# Social Graphs and Interactions Project
+### Social Graphs and Interactions Project
 
 This repo consists of the project made in the class 02805 Social Graphs and Interactions at DTU in the Fall 2020.
 
